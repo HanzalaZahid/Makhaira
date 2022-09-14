@@ -1,1 +1,32 @@
-/*# sourceMappingURL=index.css.map */
+.main_banner .services {
+  background-color: rgba(212, 212, 212, 0.3490196078);
+}
+.main_banner .services .services_list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style-type: none;
+}
+.main_banner .services .services_list .item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1.8rem;
+}
+.main_banner .services .services_list .item .icon {
+  margin-right: 1.2rem;
+}
+.main_banner .services .services_list .item .label {
+  font-family: "N041W16T", "helvetica", "sans-serif";
+  text-transform: uppercase;
+  color: rgb(0, 0, 0);
+  font-size: 1.3rem;
+}/*# sourceMappingURL=index.css.map */

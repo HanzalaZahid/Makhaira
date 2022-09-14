@@ -1,0 +1,33 @@
+@import "./mixins";
+@import "./variables";
+.main_banner
+{
+    .services
+    {
+        background-color: #d4d4d459;
+        .services_list
+        {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            list-style-type: none;
+            .item
+            {
+                display: flex;
+                align-items: center;
+                font-size: 1.8rem;
+                .icon
+                {
+                    margin-right: 1.2rem;
+                }
+                .label
+                {
+                    font-family: $fontHelveticva;
+                    text-transform: uppercase;
+                    color: $mainColor;
+                    font-size: 1.3rem;
+                }
+            }
+        }
+    }
+}

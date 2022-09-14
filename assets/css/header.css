@@ -1,20 +1,64 @@
 header .layout {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 1.6rem;
+}
+header .search .container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-header .search {
-  width: 30%;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
 }
 header .search input {
   width: 100%;
-  padding: 7px 16px;
-  font-size: 16px;
+  padding: 1rem 2rem;
+  font-size: 1.6rem;
   outline: none;
   font-family: "Vinyl", "Arial Narrow", "sans-serif";
+}
+header .search input::-webkit-input-placeholder {
+  color: rgba(0, 0, 0, 0.1);
+  font-weight: 700;
+}
+header .search input::-moz-placeholder {
+  color: rgba(0, 0, 0, 0.1);
+  font-weight: 700;
+}
+header .search input:-ms-input-placeholder {
+  color: rgba(0, 0, 0, 0.1);
+  font-weight: 700;
+}
+header .search input::-ms-input-placeholder {
+  color: rgba(0, 0, 0, 0.1);
+  font-weight: 700;
+}
+header .search input::placeholder {
+  color: rgba(0, 0, 0, 0.1);
+  font-weight: 700;
+}
+header .search .search_button {
+  background-color: rgb(0, 0, 0);
+  color: white;
+  cursor: pointer;
+  width: 4.24rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 2rem;
+  font-weight: 600;
+}
+header .options {
+  place-self: end;
 }
 header .options .container {
   display: -webkit-box;
@@ -24,7 +68,6 @@ header .options .container {
 header .options .container .option {
   text-decoration: none;
   font-family: "Vinyl", "Arial Narrow", "sans-serif";
-  font-weight: 400;
   color: rgb(0, 0, 0);
   display: -webkit-box;
   display: -ms-flexbox;
@@ -36,20 +79,24 @@ header .options .container .option {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-right: 22px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-right: 2.2rem;
 }
 header .options .container .option .icon {
-  font-size: 20px;
+  font-size: 2rem;
 }
 header .options .container .option .label {
-  font-size: 18px;
-  margin-top: 8px;
-  padding: 0px 2px;
+  font-size: 1.3em;
+  margin-top: 0.6rem;
+  padding: 0rem 0.2rem;
+  line-height: 1;
 }
 header .options .container .option::after {
   content: "";
   display: block;
-  border-bottom: 1px solid black;
+  border-bottom: 0.1rem solid black;
   width: 0;
   -webkit-transition: 0.2s ease-in;
   transition: 0.2s ease-in;

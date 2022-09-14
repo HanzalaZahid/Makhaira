@@ -3,23 +3,47 @@ header
 {
     .layout
     {
-        display: flex;
-        justify-content: space-between;
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
+        align-items: center;
+        padding-top: 1.6rem;
     }
     .search
     {
-        width: 30%;
+        .container
+        {
+            display: flex;
+            flex-wrap: nowrap;
+        }
         input
         {
             width: 100%;
-            padding: 7px 16px;
-            font-size: 16px;
+            padding: 1rem 2rem;
+            font-size: 1.6rem;
             outline: none;
             font-family: $fontVinyl;
+            &::placeholder
+            {
+                color: $placeholderColor;
+                font-weight: 700;
+            }
+        }
+        .search_button
+        {
+            background-color: $mainColor;
+            color: white;
+            cursor: pointer;
+            width: 4.24rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 2rem;
+            font-weight: 600;
         }
     }
     .options
     {
+        place-self: end;
         .container
         {
             display: flex;
@@ -27,27 +51,28 @@ header
             {
                 text-decoration: none;
                 font-family: $fontVinyl;
-                font-weight: 400;
                 color: $mainColor;
                 display: flex;
                 flex-direction: column;
                 align-items: center;
-                margin-right: 22px;
+                justify-content: center;
+                margin-right: 2.2rem;
                 .icon
                 {
-                    font-size: 20px;
+                    font-size: 2rem;
                 }
                 .label
                 {
-                    font-size: 18px;
-                    margin-top: 8px;
-                    padding: 0px 2px;
+                    font-size: 1.3em;
+                    margin-top: .6rem;
+                    padding: 0rem .2rem;
+                    line-height: 1;
                 }
                 &::after
                 {
                     content: "";
                     display: block;
-                    border-bottom: 1px solid black;
+                    border-bottom: .1rem solid black;
                     width: 0;
                     transition: .2s ease-in;
                 }
