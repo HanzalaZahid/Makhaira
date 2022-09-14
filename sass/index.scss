@@ -12,11 +12,13 @@
             align-items: center;
             list-style-type: none;
             padding: 1rem 0rem;
-            .item
+            a
             {
                 display: flex;
                 align-items: center;
                 font-size: 1.8rem;
+                color: $mainColor;
+                text-decoration: none;
                 .icon
                 {
                     margin-right: 1.2rem;
@@ -33,7 +35,59 @@
     }
     .banner
     {
-        background-color: red;
-        height: 50vh;
+        .banner_product
+        {
+            height: 50vh;
+            color: $whiteColor;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            .product_details
+            {
+                width: 40%;
+                display: flex;
+                flex-direction: column;
+                justify-content:center;
+                align-items: flex-start;
+                height: 100%;
+            }
+            .product_title
+            {
+                font-size: 4.2rem;
+                text-shadow: 1px 1px 6px black;
+            }
+            .product_description
+            {
+                text-shadow: 1px 1px 6px black;
+                font-size: 1.4rem;
+                line-height: 1.5;
+                padding: 2rem 0rem;
+            }
+            .buy_now_button
+            {
+                font-size: 1.8rem;
+                font-weight: 600;
+                background-color: transparent;
+                color: $whiteColor;
+                padding: .8rem 1.8rem;
+                border: 1px solid $whiteColor;
+                text-decoration: none;
+                &:hover
+                {
+                    background-color: $whiteColor;
+                    color: $mainColor;
+                }
+            }
+        }
+        .banner_product1
+        {
+            background-image: url('../images/banner/1.jpg');
+        }
+        .banner_product2
+        {
+            background-image: url('../images/banner/2.jpg');
+        }
     }
 }

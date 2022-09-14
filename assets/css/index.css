@@ -13,7 +13,7 @@
   list-style-type: none;
   padding: 1rem 0rem;
 }
-.main_banner .services .services_list .item {
+.main_banner .services .services_list a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -21,17 +21,74 @@
       -ms-flex-align: center;
           align-items: center;
   font-size: 1.8rem;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
 }
-.main_banner .services .services_list .item .icon {
+.main_banner .services .services_list a .icon {
   margin-right: 1.2rem;
 }
-.main_banner .services .services_list .item .label {
+.main_banner .services .services_list a .label {
   font-family: "N041W16T", "helvetica", "sans-serif";
   text-transform: uppercase;
   color: rgb(0, 0, 0);
   font-size: 1.2rem;
 }
-.main_banner .banner {
-  background-color: red;
+.main_banner .banner .banner_product {
   height: 50vh;
+  color: white;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.main_banner .banner .banner_product .product_details {
+  width: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  height: 100%;
+}
+.main_banner .banner .banner_product .product_title {
+  font-size: 4.2rem;
+  text-shadow: 1px 1px 6px black;
+}
+.main_banner .banner .banner_product .product_description {
+  text-shadow: 1px 1px 6px black;
+  font-size: 1.4rem;
+  line-height: 1.5;
+  padding: 2rem 0rem;
+}
+.main_banner .banner .banner_product .buy_now_button {
+  font-size: 1.8rem;
+  font-weight: 600;
+  background-color: transparent;
+  color: white;
+  padding: 0.8rem 1.8rem;
+  border: 1px solid white;
+  text-decoration: none;
+}
+.main_banner .banner .banner_product .buy_now_button:hover {
+  background-color: white;
+  color: rgb(0, 0, 0);
+}
+.main_banner .banner .banner_product1 {
+  background-image: url("../images/banner/1.jpg");
+}
+.main_banner .banner .banner_product2 {
+  background-image: url("../images/banner/2.jpg");
 }/*# sourceMappingURL=index.css.map */

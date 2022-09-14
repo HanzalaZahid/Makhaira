@@ -13,6 +13,12 @@
     <!-- FONT AWESOME AND BOOTSTRAP-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.9.1/font/bootstrap-icons.min.css" integrity="sha512-5PV92qsds/16vyYIJo3T/As4m2d8b6oWYfoqV+vtizRB6KhF1F9kYzWzQmsO6T3z3QG2Xdhrx7FQ+5R1LiQdUA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- JQUERY -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- SLICK JS -->
+    <link rel="stylesheet" href="./assets/plugins/slick/slick-theme.css">
+    <link rel="stylesheet" href="./assets/plugins/slick/slick.css">
+    <script src="./assets/plugins/slick/slick.min.js"></script>
     
 </head>
 <body>
@@ -65,27 +71,54 @@
         </div>
     </header>
     <section class="main_banner">
-        <div class="section_wrapper">
-            <div class="services">
-                <ul class="services_list">
-                    <li class="item">
+        <div class="services">
+            <ul class="services_list">
+                <li class="item">
+                    <a href="">
                         <div class="icon"><i class="fas fa-circle"></i></div>
                         <div class="label">Sustainability in focus</div>
-                    </li>
-                    <li class="item">
+                    </a>
+                </li>
+                <li class="item">
+                    <a href="">
                         <div class="icon"><i class="fas fa-circle"></i></div>
                         <div class="label">Home Delivery</div>
-                    </li>
-                    <li class="item">
+                    </a>
+                </li>
+                <li class="item">
+                    <a href="">
                         <div class="icon"><i class="fas fa-circle"></i></div>
                         <div class="label">Quality Craftmanship</div>
-                    </li>
-                </ul>
-            </div>
-            <div class="banner">
-
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="banner">
+            <div class="main_banner_slider">
+                <div class="product banner_product banner_product1">
+                    <div class="section_wrapper container">
+                        <div class="product_details">
+                            <h1 class="product_title">Kitchen Knife Set</h1>
+                            <div class="product_description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt, est provident, natus voluptas velit laborum deserunt adipisci quod tempora dolore iure omnis maiores unde esse, commodi doloribus minima. Amet, quas!</div>
+                            <a href="" class="buy_now_button">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="product banner_product banner_product2">
+                    <div class="section_wrapper container">
+                        <div class="product_details">
+                            <h1 class="product_title">Kitchen Knife Set</h1>
+                            <div class="product_description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt, est provident, natus voluptas velit laborum deserunt adipisci quod tempora dolore iure omnis maiores unde esse, commodi doloribus minima. Amet, quas!</div>
+                            <a href="" class="buy_now_button">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
+
+    <script>
+        $('.main_banner_slider').slick();
+    </script>
 </body>
 </html>
