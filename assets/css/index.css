@@ -11,6 +11,7 @@
       -ms-flex-align: center;
           align-items: center;
   list-style-type: none;
+  padding: 1rem 0rem;
 }
 .main_banner .services .services_list .item {
   display: -webkit-box;
@@ -28,5 +29,9 @@
   font-family: "N041W16T", "helvetica", "sans-serif";
   text-transform: uppercase;
   color: rgb(0, 0, 0);
-  font-size: 1.3rem;
+  font-size: 1.2rem;
+}
+.main_banner .banner {
+  background-color: red;
+  height: 50vh;
 }/*# sourceMappingURL=index.css.map */

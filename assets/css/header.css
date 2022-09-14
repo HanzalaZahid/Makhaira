@@ -1,10 +1,24 @@
-header .layout {
+header .top {
   display: grid;
   grid-template-columns: 1fr 2fr 1fr;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   padding-top: 1.6rem;
+}
+header .logo {
+  font-size: 3rem;
+}
+header .logo .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 header .search .container {
   display: -webkit-box;
@@ -21,23 +35,23 @@ header .search input {
   font-family: "Vinyl", "Arial Narrow", "sans-serif";
 }
 header .search input::-webkit-input-placeholder {
-  color: rgba(0, 0, 0, 0.1);
+  color: rgba(0, 0, 0, 0.3);
   font-weight: 700;
 }
 header .search input::-moz-placeholder {
-  color: rgba(0, 0, 0, 0.1);
+  color: rgba(0, 0, 0, 0.3);
   font-weight: 700;
 }
 header .search input:-ms-input-placeholder {
-  color: rgba(0, 0, 0, 0.1);
+  color: rgba(0, 0, 0, 0.3);
   font-weight: 700;
 }
 header .search input::-ms-input-placeholder {
-  color: rgba(0, 0, 0, 0.1);
+  color: rgba(0, 0, 0, 0.3);
   font-weight: 700;
 }
 header .search input::placeholder {
-  color: rgba(0, 0, 0, 0.1);
+  color: rgba(0, 0, 0, 0.3);
   font-weight: 700;
 }
 header .search .search_button {
@@ -106,4 +120,42 @@ header .options .container .option:hover::after {
 }
 header .options .container .option:last-child::after {
   display: none;
+}
+header .bottom nav {
+  padding: 2rem 8rem;
+}
+header .bottom nav .nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  list-style-type: none;
+}
+header .bottom nav .nav a {
+  font-family: "N041W16T", "helvetica", "sans-serif";
+  font-weight: 600;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-decoration: none;
+  font-size: 1.6rem;
+  color: rgb(0, 0, 0);
+  padding: 0rem 2.8rem;
+  padding-top: 1.6rem;
+  padding-bottom: 0.8rem;
+}
+header .bottom nav .nav a::after {
+  content: "";
+  border-bottom: 0.23rem solid rgb(0, 0, 0);
+  width: 0rem;
+  -webkit-transition: 0.2s ease;
+  transition: 0.2s ease;
+}
+header .bottom nav .nav a:hover::after {
+  width: 100%;
 }/*# sourceMappingURL=header.css.map */

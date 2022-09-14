@@ -1,12 +1,22 @@
 @import './variables';
 header
 {
-    .layout
+    .top
     {
         display: grid;
         grid-template-columns: 1fr 2fr 1fr;
         align-items: center;
         padding-top: 1.6rem;
+    }
+    .logo
+    {
+        font-size: 3rem;
+        .container
+        {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
     }
     .search
     {
@@ -88,6 +98,46 @@ header
                     &::after
                     {
                         display: none;
+                    }
+                }
+            }
+        }
+    }
+    .bottom
+    {   
+        nav
+        {
+            padding: 2rem 8rem;
+            .nav
+            {
+                display: flex;
+                justify-content: space-around;
+                list-style-type: none;
+                a
+                {
+                    font-family: $fontHelveticva;
+                    font-weight: 600;
+                    display: flex;
+                    flex-direction: column;
+                    text-decoration: none;
+                    font-size: 1.6rem;
+                    color: $mainColor;
+                    padding: 0rem 2.8rem;
+                    padding-top: 1.6rem;
+                    padding-bottom: .8rem;
+                    &::after
+                    {
+                        content: "";
+                        border-bottom: .23rem solid $mainColor;
+                        width: 0rem;
+                        transition: .2s ease;
+                    }
+                    &:hover
+                    {
+                        &::after
+                        {
+                            width: 100%;
+                        }
                     }
                 }
             }
