@@ -1,4 +1,4 @@
-@import url('https://use.typekit.net/rdw5cyr.js');
+@import url(https://use.typekit.net/rdw5cyr.js);
 *
 {
     padding: 0;
@@ -15,11 +15,12 @@ button, input[type=button], input[type=reset], input[type=submit], input[type=se
 
 .section_wrapper
 {
-    width: 1600px;
+    padding: 0rem 4rem;
+    width: 100%;
 }
 section
 {
     display: flex;
-    justify-content: center;
     flex-direction: column;
+    padding-bottom: 3rem;
 }
