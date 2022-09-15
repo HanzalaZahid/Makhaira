@@ -1,5 +1,6 @@
 @import "./mixins";
 @import "./variables";
+
 .main_banner
 {
     .services
@@ -108,10 +109,14 @@
                 display: flex;
                 width: 100px;
                 justify-content: space-between;
-                margin-right: 3.2rem;
                 font-weight: 600;
                 font-size: 1.8rem;
+                width: 16rem;
                 text-transform: uppercase;
+                i
+                {
+                    margin-right: 2rem;
+                }
             }
             .inputs
             {
@@ -148,6 +153,58 @@
                 }
 
             }
+        }
+    }
+}
+.product_list
+{
+    .container
+    {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        column-gap: 2rem;
+        row-gap: 2rem;
+    }
+    .product
+    {
+        text-decoration: none;
+        color: $mainColor;
+        .thumbnail
+        {
+            img
+            {
+                height: 100%;
+                width: 100%;
+            }
+        }
+        .details
+        {
+            *
+            {
+                text-align: center;
+            }
+        }
+        .name
+        {
+            font-size: 1.6rem;
+            font-family: $fontHelveticva;
+            padding: .8rem 0rem;
+        }
+        .description
+        {
+            font-family: $fontApercuregular;
+            font-size: 1.2rem;
+        }
+        .price
+        {
+            font-family: $fontHelveticva;
+            font-size: 1.4rem;
+            padding: .6rem 0rem;
+        }
+        .status
+        {
+            font-family: $fontHelveticva;
+            font-size: 1rem;
         }
     }
 }
