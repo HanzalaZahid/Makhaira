@@ -1,0 +1,148 @@
+@import "./variables";
+@import "./mixins";
+
+footer
+{
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    margin-top: 8rem;
+    *
+    {
+        color: $whiteColor;
+    }
+    >.wrapper
+    {
+        width: 1150px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .top
+    {
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
+        padding-top: 6rem;
+        width: 100%;
+        .logo
+        {
+            .container
+            {
+                height: 148px;
+                aspect-ratio: 1/1;
+                img
+                {
+                    height: 100%;
+                    width: 100%;
+                }
+            }
+        }
+        .newsletter
+        {
+            display: flex;
+            align-items: center;
+            .title
+            {
+                font-size: 1.7rem;
+                font-family: $fontGaramond;
+                text-align: center;
+                word-spacing: .8rem;
+                letter-spacing: .4rem;
+                padding-bottom: 2rem;
+            }
+            .email
+            {
+                display: flex;
+                justify-content: center;
+                .container
+                {
+                    display: flex;
+                    width: 80%;
+                }
+                button
+                {
+                    color: $mainColor;
+                    cursor: pointer;
+                    font-size: 1.2rem;
+                    font-family: $fontVinyl;
+                    font-weight: 600;
+                    padding: 0px 2rem;
+                    background-color: $whiteColor;
+                    outline: none;
+                    border: 1px solid $whiteColor;
+                    &:hover
+                    {
+                        background-color: transparent;
+                        color: $whiteColor;
+                    }
+                }
+                input
+                {
+                    border: 1px solid $whiteColor;
+                    font-family: $fontHelveticva;
+                    outline: none;
+                    background-color: transparent;
+                    font-size: 1.6rem;
+                    padding: 1rem 1.2rem;
+                    width: 100%;
+                }
+            }
+        }
+        .social
+        {
+            justify-self: end;
+            font-family: $fontGaramond;
+            display: flex;
+            align-items: center;
+            .title
+            {
+                letter-spacing: .19rem;
+                word-spacing: .8rem;
+                padding-bottom: 1rem;
+            }
+            .icons
+            {
+                font-size: 1rem;
+                display: flex;
+                justify-content: space-evenly;
+                .icon
+                {
+                    i
+                    {
+                        font-size: 2rem;
+                        color: black;
+                    }
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    height: 32px;
+                    width: 32px;
+                    background-color: white;
+                    border-radius: 50%;
+                    text-decoration: none;
+                }
+            }
+        }
+        
+    }
+    .copy_right
+    {
+        .container
+        {
+            margin: 3.5rem 0rem;
+            font-size: 1.6rem;
+        }
+    }
+    .shipment_services
+    {
+        .container
+        {
+            padding-bottom: 4rem;
+            img
+            {
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+}

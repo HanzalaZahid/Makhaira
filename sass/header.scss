@@ -1,103 +1,112 @@
 @import './variables';
 header
 {
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    background-color: white;
     .top
     {
         display: grid;
-        grid-template-columns: 1fr 2fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
         align-items: center;
-        padding-top: 1.6rem;
-    }
-    .logo
-    {
-        font-size: 3rem;
-        .container
+        padding-top: 2rem;
+        .logo
         {
             display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-    }
-    .search
-    {
-        .container
-        {
-            display: flex;
-            flex-wrap: nowrap;
-        }
-        input
-        {
-            width: 100%;
-            padding: 1rem 2rem;
-            font-size: 1.6rem;
-            outline: none;
-            font-family: $fontVinyl;
-            &::placeholder
+            align-items: c;
+            font-size: 3rem;
+            .container
             {
-                color: $placeholderColor;
-                font-weight: 700;
+                display: flex;
+                align-items: center;
+                img
+                {
+                    max-height: 42px;
+                }
             }
         }
-        .search_button
+        .search
         {
-            background-color: $mainColor;
-            color: white;
-            cursor: pointer;
-            width: 4.24rem;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-size: 2rem;
-            font-weight: 600;
-        }
-    }
-    .options
-    {
-        place-self: end;
-        .container
-        {
-            display: flex;
-            .option
+            .container
             {
-                text-decoration: none;
-                font-family: $fontVinyl;
-                color: $mainColor;
                 display: flex;
-                flex-direction: column;
-                align-items: center;
+                flex-wrap: nowrap;
+            }
+            input
+            {
+                width: 100%;
+                padding: 1rem 2rem;
+                font-size: 1.6rem;
+                outline: none;
+                font-family: $fontVinyl;
+                &::placeholder
+                {
+                    color: $placeholderColor;
+                    font-weight: 700;
+                }
+            }
+            .search_button
+            {
+                background-color: $mainColor;
+                color: white;
+                cursor: pointer;
+                width: 4.24rem;
+                display: flex;
                 justify-content: center;
-                margin-right: 2.2rem;
-                .icon
+                align-items: center;
+                font-size: 2rem;
+                font-weight: 600;
+            }
+        }
+        .options
+        {
+            place-self: end;
+            .container
+            {
+                display: flex;
+                .option
                 {
-                    font-size: 2rem;
-                }
-                .label
-                {
-                    font-size: 1.3em;
-                    margin-top: .6rem;
-                    padding: 0rem .2rem;
-                    line-height: 1;
-                }
-                &::after
-                {
-                    content: "";
-                    display: block;
-                    border-bottom: .1rem solid black;
-                    width: 0;
-                    transition: .2s ease-in;
-                }
-                &:hover
-                {
-                    &::after
+                    text-decoration: none;
+                    font-family: $fontVinyl;
+                    color: $mainColor;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    margin-right: 2.2rem;
+                    .icon
                     {
-                        width: 100%;
+                        font-size: 2rem;
                     }
-                }
-                &:last-child
-                {
+                    .label
+                    {
+                        font-size: 1.3em;
+                        margin-top: .6rem;
+                        padding: 0rem .2rem;
+                        line-height: 1;
+                    }
                     &::after
                     {
-                        display: none;
+                        content: "";
+                        display: block;
+                        border-bottom: .1rem solid black;
+                        width: 0;
+                        transition: .2s ease-in;
+                    }
+                    &:hover
+                    {
+                        &::after
+                        {
+                            width: 100%;
+                        }
+                    }
+                    &:last-child
+                    {
+                        &::after
+                        {
+                            display: none;
+                        }
                     }
                 }
             }

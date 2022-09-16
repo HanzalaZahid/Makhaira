@@ -1,60 +1,72 @@
+header {
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+  background-color: white;
+}
 header .top {
   display: grid;
-  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-top: 1.6rem;
+  padding-top: 2rem;
 }
-header .logo {
-  font-size: 3rem;
-}
-header .logo .container {
+header .top .logo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-align: c;
+      -ms-flex-align: c;
+          align-items: c;
+  font-size: 3rem;
+}
+header .top .logo .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
-header .search .container {
+header .top .logo .container img {
+  max-height: 42px;
+}
+header .top .search .container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
 }
-header .search input {
+header .top .search input {
   width: 100%;
   padding: 1rem 2rem;
   font-size: 1.6rem;
   outline: none;
   font-family: "Vinyl", "Arial Narrow", "sans-serif";
 }
-header .search input::-webkit-input-placeholder {
+header .top .search input::-webkit-input-placeholder {
   color: rgba(0, 0, 0, 0.3);
   font-weight: 700;
 }
-header .search input::-moz-placeholder {
+header .top .search input::-moz-placeholder {
   color: rgba(0, 0, 0, 0.3);
   font-weight: 700;
 }
-header .search input:-ms-input-placeholder {
+header .top .search input:-ms-input-placeholder {
   color: rgba(0, 0, 0, 0.3);
   font-weight: 700;
 }
-header .search input::-ms-input-placeholder {
+header .top .search input::-ms-input-placeholder {
   color: rgba(0, 0, 0, 0.3);
   font-weight: 700;
 }
-header .search input::placeholder {
+header .top .search input::placeholder {
   color: rgba(0, 0, 0, 0.3);
   font-weight: 700;
 }
-header .search .search_button {
+header .top .search .search_button {
   background-color: rgb(0, 0, 0);
   color: white;
   cursor: pointer;
@@ -71,15 +83,15 @@ header .search .search_button {
   font-size: 2rem;
   font-weight: 600;
 }
-header .options {
+header .top .options {
   place-self: end;
 }
-header .options .container {
+header .top .options .container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
-header .options .container .option {
+header .top .options .container .option {
   text-decoration: none;
   font-family: "Vinyl", "Arial Narrow", "sans-serif";
   color: rgb(0, 0, 0);
@@ -98,16 +110,16 @@ header .options .container .option {
           justify-content: center;
   margin-right: 2.2rem;
 }
-header .options .container .option .icon {
+header .top .options .container .option .icon {
   font-size: 2rem;
 }
-header .options .container .option .label {
+header .top .options .container .option .label {
   font-size: 1.3em;
   margin-top: 0.6rem;
   padding: 0rem 0.2rem;
   line-height: 1;
 }
-header .options .container .option::after {
+header .top .options .container .option::after {
   content: "";
   display: block;
   border-bottom: 0.1rem solid black;
@@ -115,10 +127,10 @@ header .options .container .option::after {
   -webkit-transition: 0.2s ease-in;
   transition: 0.2s ease-in;
 }
-header .options .container .option:hover::after {
+header .top .options .container .option:hover::after {
   width: 100%;
 }
-header .options .container .option:last-child::after {
+header .top .options .container .option:last-child::after {
   display: none;
 }
 header .bottom nav {
@@ -158,4 +170,4 @@ header .bottom nav .nav a::after {
 }
 header .bottom nav .nav a:hover::after {
   width: 100%;
-}/*# sourceMappingURL=header.css.map */
+}

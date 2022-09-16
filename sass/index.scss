@@ -36,60 +36,81 @@
     }
     .banner
     {
-        .banner_product
+        .banner_product:nth-child(even)
         {
-            height: 50vh;
-            color: $whiteColor;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-            display: flex;
-            justify-content: center;
-            .product_details
+            .banner_detail_container
             {
-                // width: 40%;
-                display: flex;
-                flex-direction: column;
-                justify-content:center;
-                align-items: flex-start;
-                height: 100%;
-            }
-            .product_title
-            {
-                font-size: 4.2rem;
-                text-shadow: 1px 1px 6px black;
-            }
-            .product_description
-            {
-                text-shadow: 1px 1px 6px black;
-                font-size: 1.4rem;
-                line-height: 1.5;
-                padding: 2rem 0rem;
-            }
-            .buy_now_button
-            {
-                font-size: 1.8rem;
-                font-weight: 600;
-                background-color: transparent;
-                color: $whiteColor;
-                padding: .8rem 1.8rem;
-                border: 1px solid $whiteColor;
-                text-decoration: none;
-                &:hover
+                justify-content: flex-end;
+                .product_details
                 {
-                    background-color: $whiteColor;
-                    color: $mainColor;
+                    align-items: flex-end;
                 }
             }
         }
-        .banner_product1
+        .banner_product
         {
-            background-image: url('../images/banner/1.jpg');
+            height: 46.4vh;
+            color: $whiteColor;
+            display: flex;
+            justify-content: center;
+            position: relative;
+            .product_image
+            {
+                width: 100%;
+                height: 100%;
+                img
+                {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    object-position: right;
+                }
+            }
+            .banner_detail_container
+            {
+                position: absolute;
+                width: 70%;
+                height: 100%;
+                display: flex;
+                .product_details
+                {
+                    width: 40%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content:center;
+                    align-items: flex-start;
+                    height: 100%;
+                }
+                .product_title
+                {
+                    font-size: 4.2rem;
+                    text-shadow: 1px 1px 6px black;
+                }
+                .product_description
+                {
+                    text-shadow: 1px 1px 6px black;
+                    font-size: 1.4rem;
+                    line-height: 1.5;
+                    padding: 2rem 0rem;
+                }
+                .buy_now_button
+                {
+                    font-size: 1.8rem;
+                    font-weight: 600;
+                    background-color: transparent;
+                    color: $whiteColor;
+                    padding: .8rem 1.8rem;
+                    border: 1px solid $whiteColor;
+                    text-decoration: none;
+                    &:hover
+                    {
+                        background-color: $whiteColor;
+                        color: $mainColor;
+                    }
+                }
+            }
         }
-        .banner_product2
-        {
-            background-image: url('../images/banner/2.jpg');
-        }
+    
     }
 }
 .sort_filter
@@ -161,9 +182,9 @@
     .container
     {
         display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
         column-gap: 2rem;
-        row-gap: 2rem;
+        row-gap: 4rem;
     }
     .product
     {
@@ -175,6 +196,9 @@
             {
                 height: 100%;
                 width: 100%;
+                aspect-ratio: 1/1;
+                object-fit: cover;
+                object-position: center;
             }
         }
         .details

@@ -33,20 +33,49 @@
   color: rgb(0, 0, 0);
   font-size: 1.2rem;
 }
+.main_banner .banner .banner_product:nth-child(even) .banner_detail_container {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+.main_banner .banner .banner_product:nth-child(even) .banner_detail_container .product_details {
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
 .main_banner .banner .banner_product {
-  height: 50vh;
+  height: 46.4vh;
   color: white;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  position: relative;
 }
-.main_banner .banner .banner_product .product_details {
+.main_banner .banner .banner_product .product_image {
+  width: 100%;
+  height: 100%;
+}
+.main_banner .banner .banner_product .product_image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: right;
+     object-position: right;
+}
+.main_banner .banner .banner_product .banner_detail_container {
+  position: absolute;
+  width: 70%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.main_banner .banner .banner_product .banner_detail_container .product_details {
+  width: 40%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -62,17 +91,17 @@
           align-items: flex-start;
   height: 100%;
 }
-.main_banner .banner .banner_product .product_title {
+.main_banner .banner .banner_product .banner_detail_container .product_title {
   font-size: 4.2rem;
   text-shadow: 1px 1px 6px black;
 }
-.main_banner .banner .banner_product .product_description {
+.main_banner .banner .banner_product .banner_detail_container .product_description {
   text-shadow: 1px 1px 6px black;
   font-size: 1.4rem;
   line-height: 1.5;
   padding: 2rem 0rem;
 }
-.main_banner .banner .banner_product .buy_now_button {
+.main_banner .banner .banner_product .banner_detail_container .buy_now_button {
   font-size: 1.8rem;
   font-weight: 600;
   background-color: transparent;
@@ -81,15 +110,9 @@
   border: 1px solid white;
   text-decoration: none;
 }
-.main_banner .banner .banner_product .buy_now_button:hover {
+.main_banner .banner .banner_product .banner_detail_container .buy_now_button:hover {
   background-color: white;
   color: rgb(0, 0, 0);
-}
-.main_banner .banner .banner_product1 {
-  background-image: url("../images/banner/1.jpg");
-}
-.main_banner .banner .banner_product2 {
-  background-image: url("../images/banner/2.jpg");
 }
 
 .sort_filter .filter {
@@ -153,11 +176,11 @@
 
 .product_list .container {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   -webkit-column-gap: 2rem;
      -moz-column-gap: 2rem;
           column-gap: 2rem;
-  row-gap: 2rem;
+  row-gap: 4rem;
 }
 .product_list .product {
   text-decoration: none;
@@ -166,6 +189,11 @@
 .product_list .product .thumbnail img {
   height: 100%;
   width: 100%;
+  aspect-ratio: 1/1;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
 }
 .product_list .product .details * {
   text-align: center;
@@ -187,4 +215,4 @@
 .product_list .product .status {
   font-family: "N041W16T", "helvetica", "sans-serif";
   font-size: 1rem;
-}/*# sourceMappingURL=index.css.map */
+}
