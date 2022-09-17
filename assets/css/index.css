@@ -33,12 +33,12 @@
   color: rgb(0, 0, 0);
   font-size: 1.2rem;
 }
-.main_banner .banner .banner_product:nth-child(even) .banner_detail_container {
+.main_banner .banner .banner_product:nth-child(odd) .banner_detail_container {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
 }
-.main_banner .banner .banner_product:nth-child(even) .banner_detail_container .product_details {
+.main_banner .banner .banner_product:nth-child(odd) .banner_detail_container .product_details {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
@@ -215,4 +215,4 @@
 .product_list .product .status {
   font-family: "N041W16T", "helvetica", "sans-serif";
   font-size: 1rem;
-}
+}/*# sourceMappingURL=index.css.map */

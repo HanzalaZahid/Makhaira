@@ -6,20 +6,24 @@ header {
 }
 header .top {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 2fr;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   padding-top: 2rem;
 }
+header .top .mobile_bottom {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
 header .top .logo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: c;
-      -ms-flex-align: c;
-          align-items: c;
-  font-size: 3rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 header .top .logo .container {
   display: -webkit-box;
@@ -31,6 +35,7 @@ header .top .logo .container {
 }
 header .top .logo .container img {
   max-height: 42px;
+  max-width: 100%;
 }
 header .top .search .container {
   display: -webkit-box;
@@ -170,4 +175,4 @@ header .bottom nav .nav a::after {
 }
 header .bottom nav .nav a:hover::after {
   width: 100%;
-}
+}/*# sourceMappingURL=header.css.map */

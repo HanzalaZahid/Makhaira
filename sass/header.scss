@@ -8,14 +8,24 @@ header
     .top
     {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 2fr;
+        @media screen and (max-width: 920px)
+        {
+            
+        }
         align-items: center;
         padding-top: 2rem;
+        .mobile_bottom
+        {
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+        }
         .logo
         {
             display: flex;
-            align-items: c;
-            font-size: 3rem;
+            align-items: center;
+            // font-size: 3rem;
             .container
             {
                 display: flex;
@@ -23,6 +33,7 @@ header
                 img
                 {
                     max-height: 42px;
+                    max-width: 100%;
                 }
             }
         }
