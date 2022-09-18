@@ -24,4 +24,16 @@ section
 .page_layout
 {
     padding-top: 14.23rem;
+    @media screen and(max-width: 890px)
+    {
+        padding-top: 12.63rem;   
+    }
+    @media screen and(max-width: 690px)
+    {
+        padding-top: 16.63rem;   
+    }
+    @media screen and(max-width: 560px)
+    {
+        padding-top: 12.9rem;   
+    }
 }

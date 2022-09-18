@@ -5,21 +5,43 @@ header
     width: 100%;
     z-index: 100;
     background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     .top
     {
         display: grid;
-        grid-template-columns: 1fr 2fr;
-        @media screen and (max-width: 920px)
-        {
-            
-        }
+        grid-template-columns: 2fr 5fr;
         align-items: center;
         padding-top: 2rem;
+        width: 100%;
+        @media screen and (max-width: 690px)
+        {
+            grid-template-columns: 1fr;
+            padding-top: 1rem;
+            .logo
+            {
+                justify-content: center;
+                margin-bottom: 2rem;
+            }
+            .search
+            {
+                margin-left: 2.2rem;
+            }
+        }
+        @media screen and (max-width:560px)
+        {
+            padding-bottom: 1.5rem;
+        }
         .mobile_bottom
         {
             width: 100%;
             display: grid;
-            grid-template-columns: repeat(2, 1fr);
+            grid-template-columns: 3FR 2FR;
+            @media screen and (max-width: 898px)
+            {
+                display: flex;
+            }
         }
         .logo
         {
@@ -39,6 +61,8 @@ header
         }
         .search
         {
+            flex-grow: 1;
+            margin-right: 2rem;
             .container
             {
                 display: flex;
@@ -120,18 +144,49 @@ header
                         }
                     }
                 }
+                @media screen and (max-width: 898px)
+                {
+                    .store, .account, .acoount
+                    {
+                        display: none;
+                    }
+                }
             }
         }
     }
     .bottom
     {   
+        width: calc(100% - 160px);
+        @media screen and (max-width: 860px)
+        {
+            width: 100%;
+            .header_nav
+            {
+                padding: 1rem 1.2rem;
+                
+            }
+        }
+        @media screen and(max-width: 690px)
+        {
+            .nav
+                {
+                    a
+                    {
+                        padding: .6rem 1rem!important;
+                    }
+                }
+        }
+        @media screen and (max-width:560px)
+        {
+            display: none;
+        }
         nav
         {
-            padding: 2rem 8rem;
+            padding: 2rem 2rem;
             .nav
             {
                 display: flex;
-                justify-content: space-around;
+                justify-content: space-between;
                 list-style-type: none;
                 a
                 {
