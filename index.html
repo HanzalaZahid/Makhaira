@@ -6,8 +6,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/css/index.css">
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/common.css">
+    <link rel="stylesheet" href="./assets/css/index.css">
     <link rel="stylesheet" href="./assets/css/header.css">
     <link rel="stylesheet" href="./assets/css/footer.css">
 
@@ -48,11 +49,11 @@
                             <div class="label">Login</div>
                         </a>
                         <a href="" class="option cart">
-                            <div class="icon"><i class="fa-regular fa-cart-shopping"></i></div>
+                            <div class="icon"><i class="fa-solid fa-cart-shopping"></i></div>
                             <div class="label">Cart</div>
                         </a>
                         <a href="" class="option menu">
-                            <div class="icon"><i class="fa-regular fa-ellipsis-vertical"></i></div>
+                            <div class="icon"><i class="fa-solid fa-bars"></i></div>
                             <div class="label">Menu</div>
                         </a>
                     </div>
@@ -395,7 +396,33 @@
         </div>
     </footer>
     <script>
-        $('.main_banner_slider').slick();
+        $('.main_banner_slider').slick(
+            {
+                arrows: false,
+                autoplay: true,
+                pauseOnHover: false,
+                speed: 4000
+            }
+        );
+        $('.services_list').slick(
+            {
+                arrows: false,
+                autoplay: true,
+                speed: 00,
+                responsive: 
+                [
+                    
+                    {
+                        breakpoint: 10000,
+                        settings: "unslick"
+                    },
+                    {
+                        breakpoint: 760,
+                        settings: "slick"
+                    },
+                ]
+            }
+        );
     </script>
 </body>
 </html>

@@ -1,40 +1,6 @@
 @import "./mixins";
 @import "./variables";
-.services_head
-{
-    margin-bottom: 0rem;
-    .services
-    {
-        background-color: #d4d4d459;
-        .services_list
-        {
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            list-style-type: none;
-            padding: 1rem 0rem;
-            a
-            {
-                display: flex;
-                align-items: center;
-                font-size: 1.8rem;
-                color: $mainColor;
-                text-decoration: none;
-                .icon
-                {
-                    margin-right: 1.2rem;
-                }
-                .label
-                {
-                    font-family: $fontHelveticva;
-                    text-transform: uppercase;
-                    color: $mainColor;
-                    font-size: 1.2rem;
-                }
-            }
-        }
-    }
-}
+
 .main_banner
 {
     

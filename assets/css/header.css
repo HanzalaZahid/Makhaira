@@ -163,9 +163,9 @@ header .top .options .container .option .icon {
   font-size: 2rem;
 }
 header .top .options .container .option .label {
-  font-size: 1.3em;
+  font-size: 1.6em;
   margin-top: 0.6rem;
-  padding: 0rem 0.2rem;
+  padding: 0.2rem 0.2rem;
   line-height: 1;
 }
 header .top .options .container .option::after {

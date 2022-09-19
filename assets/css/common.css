@@ -1,0 +1,42 @@
+.services_head {
+  margin-bottom: 0rem;
+}
+.services_head .services {
+  background-color: rgba(212, 212, 212, 0.3490196078);
+  padding: 0px 2.2rem;
+}
+.services_head .services .services_list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style-type: none;
+  padding: 1rem 0rem;
+}
+.services_head .services .services_list a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 1.8rem;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+}
+.services_head .services .services_list a .icon {
+  margin-right: 1.2rem;
+}
+.services_head .services .services_list a .label {
+  font-family: "N041W16T", "helvetica", "sans-serif";
+  text-transform: uppercase;
+  color: rgb(0, 0, 0);
+  font-size: 1.2rem;
+}
