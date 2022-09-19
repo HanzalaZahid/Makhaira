@@ -24,9 +24,9 @@ section {
 }
 
 .page_layout {
-  padding-top: 14.23rem;
+  padding-top: 14.6297rem;
 }
-@media screen and (max-width: 890px) {
+@media screen and (max-width: 860px) {
   .page_layout {
     padding-top: 12.63rem;
   }

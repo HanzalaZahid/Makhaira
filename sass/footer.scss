@@ -17,15 +17,57 @@ footer
         display: flex;
         flex-direction: column;
         align-items: center;
+        padding: 0px 2.2rem;
     }
     .top
     {
         display: grid;
         grid-template-columns: 1fr 2fr 1fr;
+        grid-template-areas: "l n s";
         padding-top: 6rem;
         width: 100%;
+        @media screen and (max-width: 760px)
+        {
+            grid-template-columns: 1fr;
+            grid-template-areas: "n"
+            "s"
+            "l";
+            row-gap: 3rem;
+            .logo
+            {
+                display: flex;
+                justify-content: center;
+            }
+            .newsletter
+            {
+                width: 80%;
+                .container
+                {
+                    width: 100%;
+                }
+                .email
+                {
+                    .container
+                    {
+                        width: 100%!important;
+                    }
+                }
+            }
+            *
+            {
+                justify-self: center!important;
+            }
+        }
+        @media screen and (max-width: 575px)
+        {
+            .newsletter
+            {
+                width: 100%;
+            }
+        }
         .logo
         {
+            grid-area: l;
             .container
             {
                 height: 148px;
@@ -41,14 +83,25 @@ footer
         {
             display: flex;
             align-items: center;
+            justify-content: center;
+            grid-area: n;
             .title
             {
-                font-size: 1.7rem;
+                font-size: 1.4rem;
                 font-family: $fontGaramond;
                 text-align: center;
                 word-spacing: .8rem;
                 letter-spacing: .4rem;
                 padding-bottom: 2rem;
+                @media screen and (max-width: 923px)
+                {
+                    word-spacing: unset;
+                }
+                @media screen and (max-width: 877px)
+                {
+                    line-height: 1.5;
+                    padding-bottom: 1rem;
+                }
             }
             .email
             {
@@ -57,7 +110,7 @@ footer
                 .container
                 {
                     display: flex;
-                    width: 80%;
+                    width: 90%;
                 }
                 button
                 {
@@ -94,6 +147,7 @@ footer
             font-family: $fontGaramond;
             display: flex;
             align-items: center;
+            grid-area: s;
             .title
             {
                 letter-spacing: .19rem;
@@ -127,10 +181,21 @@ footer
     }
     .copy_right
     {
+        display: flex;
+        justify-content: center;
         .container
         {
+            text-align: center;
             margin: 3.5rem 0rem;
             font-size: 1.6rem;
+            @media screen and (max-width: 760px)
+            {
+                width: 50%;
+                line-height: 1.5;
+                font-size: 1.4rem;
+                white-space: .6rem;
+                letter-spacing: .2rem;
+            }
         }
     }
     .shipment_services
@@ -142,6 +207,21 @@ footer
             {
                 width: 100%;
                 height: 100%;
+                &:nth-child(2)
+                {
+                    display: none;
+                }
+                @media screen and (max-width: 760px)
+                {
+                    &:first-child
+                    {
+                        display: none;
+                    }
+                    &:nth-child(2)
+                    {
+                        display: block;
+                    }
+                }
             }
         }
     }
